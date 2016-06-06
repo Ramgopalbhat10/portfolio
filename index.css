@@ -1,0 +1,250 @@
+/**********************
+ common
+ *********************/
+
+ul {
+  list-style: none;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	background: #eeeeee;
+	margin: 0;
+}
+
+section img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/***********************
+header
+***********************/
+
+header {
+	background: #55d379;
+	color: #fff;
+	width: 100%;
+	float: left;
+	text-align: center;
+	height: 130px;
+}
+
+header p {
+	margin-top: -10px;
+}
+
+/***********************
+navbar
+***********************/
+
+nav {
+	padding-top: 135px;
+	background: #5db779;
+	height: 50px;
+	
+}
+
+nav li {
+	display: inline-block;
+	color: #fff;
+	font-weight: bold;
+	font-size: 25px;
+	margin: 0;
+}
+
+nav ul {
+	margin: 5 0 0 0;
+	display: flex;
+	justify-content: space-around;
+	margin-left: 5px;
+	padding-left: 0px;
+}
+
+nav a:visited {
+	color: #fff;
+}
+
+nav a:hover {
+	color: #275D2E;
+}
+
+/***********************
+ gallery
+ **********************/
+
+.gal-des {
+	text-align: center;
+	margin: 50 0 35 0;
+	color: #868686;
+}
+
+.gallery {
+	max-width: 100%;
+  	margin: 0 auto;
+}
+
+.gallery li {
+	float: left;
+  	width: 45%;
+  	margin: 2.5%;
+}
+
+.gallery ul {
+	padding: 0 12%;
+}
+
+/***********************
+footer
+***********************/
+
+footer {
+	text-align: center;
+	clear: both;
+	height: 120px;
+	background: #55d379;
+	color: #fff;
+}
+
+footer img {
+	margin: 35 20 0 20;
+	opacity: 0.5;
+}
+
+footer img:hover {
+	opacity: 1;
+}
+
+/**********************
+effects
+**********************/
+
+img {
+	box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+  	border-radius: 5px;
+  	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+img:hover, nav li:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.1, 1.1);
+}
+
+nav li {
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+/**********************
+media queries
+**********************/
+
+@media screen and (max-width: 480px) {
+	.gallery li {
+		float: left;
+		width: 100%;
+	}
+	
+	
+}
+
+
+/*********************
+about css
+*********************/
+
+.about {
+    padding: 2% 25% 0 25%;
+    color: #5f5f5f;
+    margin: 25px 0 20px 0;
+}
+.about p {
+    color: #868686;
+    font-size: 20px;
+}
+.about a {
+    color: #55d379; 
+}
+.about img {
+    width: 170px;
+    border-radius: 100%;
+}
+.about img:hover {
+    box-shadow: 1px 1px 1.5pc grey;
+}
+@media (max-width: 420px) {
+    .about {
+        padding: 2% 5% 0 5%;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 660px) {
+    .about {
+        padding: 2% 15% 0 15%;
+    }
+}
+
+
+.about a:hover {
+    color: #5db779;
+}
+
+
+/**********************
+contact css
+**********************/
+
+@media (max-width: 661px) {
+	.contact {
+
+	}	
+}
+
+.contact {
+	min-height: 600px;
+	width: 70%;
+	margin: auto;
+	margin-top: 100px;
+	color: #5f5f5f;
+}
+
+.contact p {
+	color: #868686;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+.contact-detls {
+	margin-top: 70px;
+}
+
+.mail, .twitter {
+	display: flex;
+	margin-top: 20px;
+
+}
+
+.number {
+	display: flex;
+	margin-top: 40px;
+}
+
+.number h4, .mail h4, .twitter h4 {
+	margin: 4px 20px;
+	color: #55d379;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.number img, .mail img, .twitter img {
+	width: 35px;
+	height: 35px;
+}
+
+.number h4:hover, .mail h4:hover, .twitter h4:hover {
+	color: #5db779;
+}
